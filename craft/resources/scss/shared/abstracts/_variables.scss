@@ -1,0 +1,35 @@
+﻿//
+// Colors
+$colors: (
+    "white": ("default": #ffffff),
+    "black": ("default": #000000),
+    "gray": ("darker": #c2c2c2, "dark": #e1e1e1, "default": #eff4fb),
+    "blue": ("dark": #385573, "default": #0071cf, "light": lighten(#0071cf, 25%), "lightest": lighten(#0071cf, 50%)),
+    "green": ("dark": #00a887, "default": #00a887, "light": lighten(#00a887, 25%), "lightest": lighten(#00a887, 50%)),
+    "red": ("dark": darken(#ff3c20, 25%), "default": #ff3c20, "light": lighten(#ff3c20, 25%), "lightest": lighten(#ff3c20, 40%)),
+    "validation": ("valid": #42c055, "invalid": #e50044, "valid-dark": darken(#42c055, 25%), "invalid-dark": darken(#e50044, 25%)),
+    "social": ("facebook": #3b5998, "twitter": #1da1f2, "instagram": #c13584, "youtube": #ff0000, "linkedin": #0077b5, "pinterest": #bd081c),
+);
+
+//
+// Fonts
+$font-default: "Roboto", sans-serif;
+$font-heading: "Poppins", sans-serif;
+
+//
+// Transition defaults
+$transition-default-smoothing: ease-in-out;
+$transition-default-time: .3s;
+$transition-default: all $transition-default-time $transition-default-smoothing;
+
+$transition-cubic-smoothing: cubic-bezier(.2, 0, 0, 1);
+$transition-cubic-time: .5s;
+$transition-cubic: all $transition-cubic-time $transition-cubic-smoothing;
+
+//
+// Border Radius
+$border-radius: 4px;
+
+//
+// Box Shadow
+$box-shadow: 0 0 16px 2px rgba(map-deep-get($colors, "black", "default"), .2);

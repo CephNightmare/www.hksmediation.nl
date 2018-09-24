@@ -1,0 +1,169 @@
+input, select {
+    height: rem-calc(40);
+    border: 1px solid map-deep-get($colors, "gray", "dark");
+    padding: 0 rem-calc(16);
+    width: 100%;
+    transition: $transition-default;
+
+    &:focus {
+        outline: none;
+        border: 1px solid map-deep-get($colors, "blue", "default");
+    }
+}
+
+textarea {
+    border: 1px solid map-deep-get($colors, "gray", "dark");
+    padding: 8px 16px;
+    resize: vertical;
+    min-height: rem-calc(100);
+    width: 100%;
+    transition: border .3s ease-in-out;
+
+    &:focus {
+        outline: none;
+        border: 1px solid map-deep-get($colors, "blue", "default");
+    }
+}
+
+select {
+    background: map-deep-get($colors, "white", "default");
+    appearance: none;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+//Radio Button styling
+
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem-calc(8);
+    $radioWrapper: &;
+
+    &__input-wrapper {
+        position: relative;
+        width: rem-calc(25);
+        height: rem-calc(25);
+        margin-right: rem-calc(8);
+        float: left;
+        cursor: pointer;
+        flex-shrink: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            border-radius: 50%;
+            background-color: map-deep-get($colors, "white", "default");
+            border: 1px solid map-deep-get($colors, "gray", "dark");
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__input-dot {
+        position: absolute;
+        left: rem-calc(5);
+        top: rem-calc(5);
+        z-index: 2;
+        border-radius: 50%;
+        background-color: map-deep-get($colors, "blue", "default");
+        width: rem-calc(15);
+        height: rem-calc(15);
+        opacity: 0;
+    }
+
+    // Default input styling uit Back-End heeft geen class
+    /* stylelint-disable */
+    &__input, input {
+        line-height: 1;
+        position: absolute;
+        left: rem-calc(-999);
+
+        &:checked {
+            + #{$radioWrapper}__input-dot {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__label, label {
+        font-size: rem-calc(15);
+        cursor: pointer;
+        font-weight: 400;
+    }
+    /* stylelint-enable */
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: start;
+    margin-bottom: rem-calc(8);
+    $checkboxWrapper: &;
+
+    &__input-wrapper {
+        position: relative;
+        width: rem-calc(25);
+        height: rem-calc(25);
+        min-width: rem-calc(25);
+        min-height: rem-calc(25);
+        margin-right: rem-calc(8);
+        cursor: pointer;
+        flex-shrink: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            border-radius: rem-calc(5);
+            background-color: map-deep-get($colors, "white", "default");
+            border: 1px solid map-deep-get($colors, "gray", "dark");
+            display: block;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__input-dot {
+        position: absolute;
+        width: rem-calc(16);
+        left: rem-calc(5);
+        top: rem-calc(4);
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 0;
+
+        svg {
+            fill: map-deep-get($colors, "blue", "default");
+        }
+    }
+
+    // Default input styling uit Back-End heeft geen class
+    /* stylelint-disable */
+    &__input, input {
+        line-height: 1;
+        position: absolute;
+        left: rem-calc(-999);
+
+        &:checked {
+            + #{$checkboxWrapper}__input-dot {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__label, label {
+        cursor: pointer;
+        margin-top: rem-calc(2);
+        font-weight: 400;
+    }
+    /* stylelint-enable */
+}

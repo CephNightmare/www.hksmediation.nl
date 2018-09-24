@@ -1,0 +1,36 @@
+$hamburger-padding-x                       : 0;
+$hamburger-padding-y                       : 5px;
+$hamburger-layer-width                     : 20px;
+$hamburger-layer-height                    : 2px;
+$hamburger-layer-spacing                   : 4px;
+$hamburger-layer-color                     : #000000;
+$hamburger-layer-border-radius             : 0;
+$hamburger-hover-opacity                   : .7;
+$hamburger-hover-transition-duration       : .15s;
+$hamburger-hover-transition-timing-function: linear;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+//
+
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter    : opacity(50%);
+$hamburger-types: (squeeze);
+
+@import "hamburgers/_sass/hamburgers/hamburgers";
+
+.hamburger {
+    z-index: 11;
+    line-height: 1;
+
+    &--inverted {
+        .hamburger-inner {
+            background-color: map-deep-get($colors, "black", "default");
+
+            &::after, &::before {
+                background-color: map-deep-get($colors, "black", "default");
+            }
+        }
+    }
+}

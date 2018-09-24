@@ -1,0 +1,22 @@
+.barba-bg {
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: map-deep-get($colors, "white", "default");
+    margin-left: 100%;
+    opacity: 0;
+    transition: margin 0s linear .3s, opacity .3s ease-in-out;
+
+    &--visible {
+        opacity: 1;
+        margin-left: 0;
+        transition: margin 0s linear, opacity .3s ease-in-out;
+    }
+}
+
+.barba-container {
+    overflow: hidden;
+}

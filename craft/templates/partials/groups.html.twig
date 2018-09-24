@@ -1,0 +1,20 @@
+<div class="groups">
+    <div class="container">
+        <div class="row justify-content-center">
+            {% for group in entry.group %}
+                <div class="col-xs-24 col-sm-16 col-lg-8">
+                    <a href="{{ group.groupUrl.first().url  }}" class="groups__item groups__item--{{ group.color }}">
+                        <h2 class="groups__title h6">
+                            <img class="groups__icon" src="/public/images/{{ group.color }}-stoel.png" />
+                            {{ group.groupTitle }}
+                        </h2>
+                        <p class="groups__text">
+                            {{ group.text }}
+                        </p>
+                        <span class="groups__read-more">{{ base.readMore }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $font-heading;
+}
+
+h1, .h1 {
+    font-size: rem-calc(30);
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: rem-calc(15);
+
+    @include media-breakpoint-up(md) {
+        font-size: rem-calc(50);
+    }
+}
+
+h6, .h6 {
+    font-family: $font-default;
+    font-size: rem-calc(18);
+    font-weight: 400;
+}
+
+p {
+    margin: rem-calc(10) 0;
+}

@@ -1,0 +1,21 @@
+<div class="hero">
+    <div class="hero__bg" style="background-image: url('{{ entry.heroImage.first().url }}')"></div>
+
+    <div class="hero__content">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-24 col-md-18">
+                    <h1 class="hero__title">{{ entry.heroTitle }}</h1>
+                    <div class="hero__text">
+                        {{ entry.heroText }}
+                    </div>
+
+                    <div class="hero__buttons">
+                        <a href="#" class="hero__button button">Neem contact op</a>
+                        <a href="#" class="hero__button button button--white">Lees meer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

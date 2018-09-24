@@ -1,0 +1,8 @@
+.b-lazy {
+    opacity: 0;
+    transition: $transition-default;
+
+    &.b-loaded {
+        opacity: 1;
+    }
+}

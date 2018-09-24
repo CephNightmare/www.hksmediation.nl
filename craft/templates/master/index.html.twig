@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <title>{{ entry.title }}</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <meta name="referrer" content="origin-when-cross-origin"/>
+
+    <link href="{{ siteUrl }}public/css/main.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="barba-bg"></div>
+<div class="barba-wrapper">
+    <div class="barba-container">
+
+        <header id="header" class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header__top-content">
+                                <div class="header__top-address">
+                                    {{ headerTop.headerAddress }}
+                                </div>
+                                <div class="header__top-contact">
+                                    <a href="mailto:{{ headerTop.email }}"
+                                       class="header__top-contact-link">{{ headerTop.emailTitle }}</a>
+                                    <a href="mailto:{{ headerTop.phonenumber }}"
+                                       class="header__top-contact-link">{{ headerTop.phonenumberTitle }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__main">
+                <div class="container">
+
+                    <div class="col">
+                        <div class="header__main-content">
+                            <a href="/" class="header__logo">
+                                <img src="/public/images/logo.png" alt="">
+                            </a>
+
+                            <nav class="header__nav">
+                                <ul class="header__list">
+                                    <li class="header__list-item">
+                                        <a href="#" class="header__list-link header__list-link--active">Home</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a href="#" class="header__list-link header__list-link--active">Over HKS
+                                            Mediation</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a href="#" class="header__list-link header__list-link--active">Wat is
+                                            mediation?</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a href="#" class="header__list-link header__list-link--active">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

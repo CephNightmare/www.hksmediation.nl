@@ -1,0 +1,56 @@
+.groups {
+    position: relative;
+    z-index: 2;
+    margin-bottom: rem-calc(100);
+    margin-top: rem-calc(-30);
+
+    &__item {
+        background: map-deep-get($colors, "white", "default");
+        color: map-deep-get($colors, "blue", "dark");
+        transition: $transition-default;
+        display: block;
+        box-shadow: $box-shadow;
+        padding: 25px 35px 25px 25px;
+        margin-bottom: rem-calc(30);
+        border-radius: $border-radius;
+
+        @include media-breakpoint-up(lg) {
+            height: 100%;
+        }
+
+        &--rood {
+            &:hover,
+            &:focus {
+                background: map-deep-get($colors, "red", "lightest");
+            }
+        }
+
+        &--grijs {
+            &:hover,
+            &:focus {
+                background: map-deep-get($colors, "gray", "default");
+            }
+        }
+
+        &--groen {
+            &:hover,
+            &:focus {
+                background: map-deep-get($colors, "green", "lightest");
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: rem-calc(14);
+    }
+
+    &__icon {
+        width: rem-calc(30);
+        margin-right: rem-calc(15);
+    }
+}

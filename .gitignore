@@ -1,0 +1,5 @@
+/craft/.env
+/craft/.idea
+/craft/vendor
+craft/.DS_Store
+/craft/resources/node_modules/*

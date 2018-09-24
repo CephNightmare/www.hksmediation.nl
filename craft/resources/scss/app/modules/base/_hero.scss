@@ -1,0 +1,52 @@
+.hero {
+    color: map-deep-get($colors, "white", "default");
+    position: relative;
+    height: rem-calc(700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        //background: linear-gradient(to right, rgba(map-deep-get($colors, "blue", "default"), .65) 30%, rgba(map-deep-get($colors, "black", "default"), 0) 100%);
+        background: rgba(map-deep-get($colors, "black", "default"), .4);
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__bg {
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        margin-top: rem-calc(100);
+    }
+
+    &__title {
+        color: map-deep-get($colors, "white", "default");
+    }
+
+    &__text {
+        width: 80%;
+    }
+
+    &__buttons {
+        margin-top: rem-calc(15);
+    }
+
+    &__button {
+        margin-right: rem-calc(10);
+    }
+}
