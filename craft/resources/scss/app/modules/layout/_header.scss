@@ -1,15 +1,32 @@
 .header {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     left: 0;
     right: 0;
+    box-shadow: $box-shadow;
+    $header: &;
+
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        box-shadow: none;
+    }
 
     &__top {
         background-color: map-deep-get($colors, "blue", "default");
         height: rem-calc(50);
         color: map-deep-get($colors, "white", "default");
-        display: flex;
+        display: none;
         align-items: center;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+    }
+
+    &__hamburger {
+        position: fixed;
+        top: rem-calc(20);
+        right: rem-calc(30);
     }
 
     &__top-content {
@@ -33,10 +50,16 @@
     }
 
     &__main {
-        padding: 21px 0;
-        background-image: url("/public/images/header.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        padding: 10px 0;
+        background-color: map-deep-get($colors, "white", "default");
+
+        @include media-breakpoint-up(md) {
+            padding: 21px 0;
+            background-image: url("/public/images/header.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+        }
     }
 
     &__main-content {
@@ -46,21 +69,65 @@
 
     &__list {
         display: flex;
-        margin-top: rem-calc(20);
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: map-deep-get($colors, "blue", "default");
+        opacity: 0;
+        margin-left: rem-calc(9999);
+        transition: opacity .3s ease-in-out, margin-left 0s linear .3s;
+
+        @include media-breakpoint-up(md) {
+            flex-wrap: nowrap;
+            position: static;
+            background-color: transparent;
+            align-content: inherit;
+            margin-left: 0;
+            opacity: 1;
+        }
     }
 
     &__list-item {
-        margin: 0 rem-calc(10);
+        text-align: center;
+        margin: rem-calc(20) rem-calc(10);
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: auto;
+        }
     }
 
     &__list-link {
-        color: map-deep-get($colors, "blue", "dark");
-        font-size: rem-calc(14);
-        font-weight: 300;
+        color: map-deep-get($colors, "white", "default");
+        font-size: 8vw;
+        font-weight: 700;
+
+        @include media-breakpoint-up(md) {
+            color: map-deep-get($colors, "blue", "dark");
+            font-size: rem-calc(14);
+            font-weight: 300;
+        }
     }
 
     &__logo {
-        width: rem-calc(300);
+        width: rem-calc(150);
         display: inline-block;
+
+        @include media-breakpoint-up(md) {
+            width: rem-calc(300);
+        }
+    }
+
+    &--active {
+        #{$header}__list {
+            opacity: 1;
+            margin-left: 0;
+            transition: opacity .3s ease-in-out, margin-left 0s linear;
+        }
     }
 }

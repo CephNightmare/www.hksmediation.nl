@@ -26,10 +26,10 @@ $hamburger-types: (squeeze);
 
     &--inverted {
         .hamburger-inner {
-            background-color: map-deep-get($colors, "black", "default");
+            background-color: map-deep-get($colors, "white", "default");
 
             &::after, &::before {
-                background-color: map-deep-get($colors, "black", "default");
+                background-color: map-deep-get($colors, "white", "default");
             }
         }
     }

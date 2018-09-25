@@ -5,7 +5,16 @@
     padding: 12px 25px;
     border-radius: $border-radius;
     transition: $transition-default;
-    display: inline-block;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+
+    svg {
+        height: rem-calc(20);
+        width: rem-calc(20);
+        fill: map-deep-get($colors, "white", "default");
+        margin-left: rem-calc(5);
+    }
 
     &:hover,
     &:focus {

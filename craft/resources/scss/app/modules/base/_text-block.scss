@@ -1,0 +1,38 @@
+.text-block {
+    padding: rem-calc(35) 0;
+    $text-block: &;
+
+    &__title {
+        color: map-deep-get($colors, "blue", "default");
+    }
+
+    &__button {
+        margin-top: rem-calc(10);
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image {
+        margin-top: rem-calc(60);
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: rem-calc(80) 0;
+
+        #{$text-block}__image {
+            margin-top: 0;
+        }
+    }
+}

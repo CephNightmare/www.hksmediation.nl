@@ -1,8 +1,9 @@
 .groups {
     position: relative;
     z-index: 2;
-    margin-bottom: rem-calc(100);
+    margin-bottom: rem-calc(40);
     margin-top: rem-calc(-30);
+    $groups: &;
 
     &__item {
         background: map-deep-get($colors, "white", "default");
@@ -19,6 +20,10 @@
         }
 
         &--rood {
+            #{$groups}__title {
+                color: map-deep-get($colors, "red", "default");
+            }
+
             &:hover,
             &:focus {
                 background: map-deep-get($colors, "red", "lightest");
@@ -26,13 +31,21 @@
         }
 
         &--grijs {
+            #{$groups}__title {
+                color: map-deep-get($colors, "gray", "default");
+            }
+
             &:hover,
             &:focus {
-                background: map-deep-get($colors, "gray", "default");
+                background: map-deep-get($colors, "gray", "lightest");
             }
         }
 
         &--groen {
+            #{$groups}__title {
+                color: map-deep-get($colors, "green", "default");
+            }
+
             &:hover,
             &:focus {
                 background: map-deep-get($colors, "green", "lightest");

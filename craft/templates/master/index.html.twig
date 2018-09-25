@@ -12,10 +12,11 @@
 </head>
 <body>
 <div class="barba-bg"></div>
-<div class="barba-wrapper">
+
+<div id="barba-wrapper">
     <div class="barba-container">
 
-        <header id="header" class="header">
+        <header id="header" class="header" :class="{ 'header--active': menuExpanded }">
             <div class="header__top">
                 <div class="container">
                     <div class="row">
@@ -63,6 +64,12 @@
                                     </li>
                                 </ul>
                             </nav>
+
+                            <a href="#" @click.prevent="menuExpanded = !menuExpanded" class="d-block d-lg-none header__hamburger hamburger hamburger--squeeze" :class="{ 'is-active hamburger--inverted': menuExpanded }" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </a>
                         </div>
                     </div>
 
@@ -73,5 +80,8 @@
         {% block content %}{% endblock %}
     </div>
 </div>
+
+<script src="/public/js/vendors.min.js" type="text/javascript"></script>
+<script src="/public/js/app.min.js" type="text/javascript"></script>
 </body>
 </html>

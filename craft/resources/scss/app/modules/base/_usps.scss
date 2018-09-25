@@ -1,0 +1,12 @@
+.usps {
+    margin-top: rem-calc(40);
+
+    @include media-breakpoint-up(md) {
+        margin-top: rem-calc(80);
+    }
+
+    &__title {
+        color: map-deep-get($colors, "blue", "default");
+        text-align: center;
+    }
+}

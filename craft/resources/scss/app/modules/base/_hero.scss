@@ -31,7 +31,11 @@
     &__content {
         position: relative;
         z-index: 2;
-        margin-top: rem-calc(100);
+        margin-top: rem-calc(30);
+
+        @include media-breakpoint-up(md) {
+            margin-top: rem-calc(100);
+        }
     }
 
     &__title {
@@ -40,6 +44,15 @@
 
     &__text {
         width: 80%;
+
+        // Rich text editor
+        /* stylelint-disable */
+        p {
+            font-weight: 500;
+            color: map-deep-get($colors, "white", "default");
+            line-height: 1.6;
+        }
+        /* stylelint-enable */
     }
 
     &__buttons {

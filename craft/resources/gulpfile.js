@@ -118,7 +118,6 @@ gulp.task('scss_lint', function () {
 gulp.task('app-scss', function () {
     return gulp.src(config.scss.app.src)
         .pipe(plumber())
-        .pipe(sourcemaps.init())
         .pipe(expect(config.scss.app.src))
         .pipe(sass({
             errLogToConsole: true,
@@ -142,16 +141,7 @@ gulp.task('app-scss', function () {
             }
         }))
         .pipe(concat({path: 'css/main.min.css', cwd: ''}))
-        .pipe(gulpif(config.conditions.manifest, rev()))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(config.paths.dist))
-        .pipe(gulpif(config.conditions.manifest, rev.manifest('manifest.json', {merge: true, base: './public'})))
-        .pipe(gulpif(config.conditions.manifest, revDel({
-            dest: config.paths.dist,
-            oldManifest: 'manifest.json',
-            deleteMapExtensions: true
-        })))
-        .pipe(gulpif(config.conditions.manifest, gulp.dest(config.paths.dist)))
         .pipe(reload({stream: true}));
 });
 

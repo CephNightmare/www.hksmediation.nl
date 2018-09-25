@@ -11,17 +11,18 @@ Barba.Dispatcher.on("transitionCompleted", function () {
             computed: {
                 menuExpanded: {
                     get() {
+                        console.log(this.$store.state.Layout.menuExpanded);
                         return this.$store.state.Layout.menuExpanded;
                     },
                     set(value) {
+                        console.log("set computed value menu expanded");
                         this.$store.dispatch('Layout/changeMenuExpanded', value)
                     }
                 }
             },
             mounted: function () {
             },
-            methods: {
-            },
+            methods: {},
             created: function () {
             },
             destroyed: function () {

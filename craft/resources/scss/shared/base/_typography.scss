@@ -14,6 +14,44 @@ h1, .h1 {
     }
 }
 
+h2, .h2 {
+    font-size: rem-calc(30);
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: rem-calc(15);
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem-calc(36);
+    }
+
+    &--lined {
+        @include media-breakpoint-up(md) {
+            &::before {
+                content: "";
+                position: absolute;
+                height: rem-calc(1);
+                width: rem-calc(85);
+                margin-left: rem-calc(-100);
+                top: 50%;
+                display: inline-block;
+                background-color: map-deep-get($colors, "blue", "default");
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: rem-calc(1);
+                width: rem-calc(85);
+                margin-left: rem-calc(15);
+                top: 50%;
+                display: inline-block;
+                background-color: map-deep-get($colors, "blue", "default");
+            }
+        }
+    }
+}
+
 h6, .h6 {
     font-family: $font-default;
     font-size: rem-calc(18);
@@ -22,4 +60,6 @@ h6, .h6 {
 
 p {
     margin: rem-calc(10) 0;
+    line-height: 1.9;
+    color: map-deep-get($colors, "blue", "dark");
 }
