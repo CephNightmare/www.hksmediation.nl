@@ -2,15 +2,40 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="h2 h2--lined usps__title">HKS Mediation - Voor huwelijk, kerk en school</h2>
+                <h2 class="h2 h2--lined usps__title">{{ entry.uspBlockTitle }}</h2>
+                <p class="usps__text">{{ entry.uspBlockText }}</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-24 col-sm-12 col-lg-6">
-                <a href="#" class="usps__block">
+        <div class="usps__list">
+            <div class="row">
+                <div class="col-xs-24 col-sm-12 col-lg-6">
+                    <a href="#" class="usps__block">
+                        <h3 class="usps__block-title">{{ entry.usp1Title }}</h3>
+                        <p class="usps__block-text">{{ entry.usp1Text }}</p>
+                    </a>
+                </div>
 
-                </a>
+                <div class="col-xs-24 col-sm-12 col-lg-6">
+                    <a href="#" class="usps__block">
+                        <h3 class="usps__block-title">{{ entry.usp2Title }}</h3>
+                        <p class="usps__block-text">{{ entry.usp2Text }}</p>
+                    </a>
+                </div>
+
+                <div class="col-xs-24 col-sm-12 col-lg-6">
+                    <a href="#" class="usps__block">
+                        <h3 class="usps__block-title">{{ entry.usp3Title }}</h3>
+                        <p class="usps__block-text">{{ entry.usp3Text }}</p>
+                    </a>
+                </div>
+
+                <div class="col-xs-24 col-sm-12 col-lg-6">
+                    <a href="#" class="usps__block">
+                        <h3 class="usps__block-title">{{ entry.usp4Title }}</h3>
+                        <p class="usps__block-text">{{ entry.usp4Text }}</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,0 +1,22 @@
+<div class="blue-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="h2 h2--lined blue-section__title">Ervaringen van anderen</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="blue-section__testimonials">
+                    {% for testimonial in entry.testimonials %}
+                        {% include 'partials/testimonial.html.twig' with { 'testimonial': testimonial } %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/cta.html.twig' %}
+
+</div>

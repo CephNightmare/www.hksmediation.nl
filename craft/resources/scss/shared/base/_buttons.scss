@@ -32,4 +32,17 @@
             border-color: map-deep-get($colors, "blue", "lightest");
         }
     }
+
+    &--red-ghost {
+        border-color: map-deep-get($colors, "white", "default");
+        background-color: map-deep-get($colors, "white", "default");
+        color: map-deep-get($colors, "red", "default");
+
+        &:hover,
+        &:focus {
+            background-color: map-deep-get($colors, "red", "default");
+            border-color: map-deep-get($colors, "white", "default");
+            color: map-deep-get($colors, "white", "default");
+        }
+    }
 }

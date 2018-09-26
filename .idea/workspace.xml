@@ -22,41 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_hamburgers.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/vendor/hamburgers/_hamburgers.scss">
+      <file leaf-file-name="usps.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/templates/partials/usps.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_hero.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_hero.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_text-block.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text-block.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="80">
+              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -65,28 +35,58 @@
       <file leaf-file-name="_entry.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/templates/home/_entry.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="112">
+              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usps.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/craft/templates/partials/usps.html.twig">
+      <file leaf-file-name="blue-section.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/templates/partials/blue-section.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="208">
+              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/base/_typography.scss">
+      <file leaf-file-name="testimonial.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/templates/partials/testimonial.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="80">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_blue-section.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_blue-section.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_testimonial.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_testimonial.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/abstracts/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
       <file leaf-file-name="_usps.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_usps.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="368">
+              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -105,8 +105,8 @@
       <file leaf-file-name="__all-base.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/__all-base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="64">
+              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -168,26 +168,30 @@
         <option value="$PROJECT_DIR$/craft/templates/partials/groups.html.twig" />
         <option value="$PROJECT_DIR$/craft/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/shared/abstracts/_variables.scss" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/groups/_groups.scss" />
-        <option value="$PROJECT_DIR$/craft/templates/partials/cta.html.twig" />
         <option value="$PROJECT_DIR$/craft/resources/images/icons/angle-right.svg" />
         <option value="$PROJECT_DIR$/craft/resources/scss/shared/base/_base.scss" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/shared/base/_buttons.scss" />
         <option value="$PROJECT_DIR$/craft/resources/gulpfile.js" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_cta.scss" />
         <option value="$PROJECT_DIR$/craft/templates/partials/text-block.html.twig" />
         <option value="$PROJECT_DIR$/craft/resources/js/app/modules/layout/_components/header.js" />
         <option value="$PROJECT_DIR$/craft/resources/scss/shared/vendor/hamburgers/_hamburgers.scss" />
         <option value="$PROJECT_DIR$/craft/templates/master/index.html.twig" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_hero.scss" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/layout/_header.scss" />
-        <option value="$PROJECT_DIR$/craft/templates/partials/usps.html.twig" />
         <option value="$PROJECT_DIR$/craft/resources/scss/shared/base/_typography.scss" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/__all-base.scss" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_usps.scss" />
-        <option value="$PROJECT_DIR$/craft/templates/home/_entry.twig" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text-block.scss" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/shared/base/_buttons.scss" />
+        <option value="$PROJECT_DIR$/craft/templates/partials/cta.html.twig" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_cta.scss" />
+        <option value="$PROJECT_DIR$/craft/templates/home/_entry.twig" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/shared/abstracts/_variables.scss" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/__all-base.scss" />
+        <option value="$PROJECT_DIR$/craft/templates/partials/usps.html.twig" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_usps.scss" />
+        <option value="$PROJECT_DIR$/craft/templates/partials/blue-section.html.twig" />
+        <option value="$PROJECT_DIR$/craft/templates/partials/testimonial.html.twig" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_testimonial.scss" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_blue-section.scss" />
       </list>
     </option>
   </component>
@@ -276,6 +280,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -564,8 +570,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -576,19 +580,19 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\node_modules\gulp" />
-    <property name="SearchEverywhereHistoryKey" value="typo&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;text&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/base/_text-block.scss&#10;hero&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/base/_hero.scss&#10;header.sc&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/layout/_header.scss&#10;header&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/js/app/modules/layout/_components/header.js&#10;header.js&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/js/app/modules/layout/_components/header.js&#10;gulpfile&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/gulpfile.js&#10;gulp.con&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/config/gulp.conf.js&#10;typog&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;button&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_buttons.scss&#10;var&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/abstracts/_variables.scss&#10;header.scs&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/layout/_header.scss&#10;typogra&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;gulpfi&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/gulpfile.js" />
+    <property name="SearchEverywhereHistoryKey" value="usps&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/base/_usps.scss&#10;groups&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/groups/_groups.scss&#10;var&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/abstracts/_variables.scss&#10;cta&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/templates/partials/cta.html.twig&#10;buttons&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_buttons.scss&#10;typo&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;text&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/base/_text-block.scss&#10;hero&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/base/_hero.scss&#10;header.sc&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/layout/_header.scss&#10;header&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/js/app/modules/layout/_components/header.js&#10;header.js&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/js/app/modules/layout/_components/header.js&#10;gulpfile&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/gulpfile.js&#10;gulp.con&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/config/gulp.conf.js&#10;typog&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;button&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_buttons.scss&#10;header.scs&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/app/modules/layout/_header.scss&#10;typogra&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/scss/shared/base/_typography.scss&#10;gulpfi&#9;FILE&#9;file://F:/XAMPP/htdocs/www.hksmediation.nl/craft/resources/gulpfile.js" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl" />
-      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\templates\master" />
-      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\scss\app\modules\base" />
       <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\templates\partials" />
       <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\images\icons" />
       <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\scss\app\modules\groups" />
+      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl" />
+      <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\templates\master" />
       <recent name="F:\XAMPP\htdocs\www.hksmediation.nl\craft\resources\images" />
     </key>
   </component>
@@ -750,22 +754,22 @@
       <workItem from="1537644212070" duration="5711000" />
       <workItem from="1537807291417" duration="14724000" />
       <workItem from="1537896177330" duration="11342000" />
+      <workItem from="1537986687302" duration="9413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37702000" />
+    <option name="totallyTimeSpent" value="47115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.49213162" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5078684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.49785408" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.50214595" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2426869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -777,6 +781,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -791,34 +796,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/js/app/mixins/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/js/app/modules/layout/_api/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/__all-layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -927,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="81" lean-forward="false" selection-start-line="0" selection-start-column="81" selection-end-line="0" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,31 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/groups/_groups.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,15 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/templates/partials/cta.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="73" column="76" lean-forward="true" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,15 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/base/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,15 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_cta.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4581">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +1031,7 @@
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_hero.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
-          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1126,39 +1039,63 @@
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/templates/partials/usps.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/base/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="336">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text-block.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/node_modules/bootstrap/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/base/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_cta.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/groups/_groups.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/__all-base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_usps.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="64">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1171,18 +1108,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft/templates/home/_entry.twig">
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/shared/abstracts/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="32">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text-block.scss">
+    <entry file="file://$PROJECT_DIR$/craft/templates/home/_entry.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/partials/cta.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_usps.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/partials/usps.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/partials/blue-section.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/templates/partials/testimonial.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_testimonial.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_blue-section.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
