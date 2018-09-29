@@ -1,5 +1,6 @@
 .usps {
     margin: rem-calc(40) 0;
+    $usps: &;
 
     @include media-breakpoint-up(md) {
         margin-top: rem-calc(80);
@@ -13,13 +14,18 @@
     &__text {
         text-align: center;
         line-height: 1.6;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(lg) {
+            width: 75%;
+        }
     }
 
     &__list {
         margin-top: rem-calc(30);
 
         @include media-breakpoint-up(md) {
-          margin-top: rem-calc(60);
+            margin-top: rem-calc(60);
         }
     }
 
@@ -27,40 +33,58 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        align-content: flex-start;
+        align-content: center;
         justify-content: center;
-        background-color: map-deep-get($colors, "blue", "darker");
         color: map-deep-get($colors, "white", "default");
         padding: 25px;
         border-radius: $border-radius;
-        box-shadow: $box-shadow;
         position: relative;
-        margin-top: rem-calc(30);
+        overflow: hidden;
+        min-height: rem-calc(250);
+        margin-bottom: rem-calc(30);
 
         @include media-breakpoint-up(lg) {
             height: 100%;
-            margin-top: 0;
         }
 
-        &::after {
+        &::before {
             content: "";
-            width: 50%;
+            background-color: map-deep-get($colors, "blue", "darker");
             position: absolute;
-            bottom: 0;
-            left: 25%;
+            left: 0;
             right: 0;
-            height: rem-calc(5);;
-            background-color: map-deep-get($colors, "blue", "default");
-            opacity: 0;
-            transition: $transition-default;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            opacity: .75;
         }
 
         &:hover,
         &:focus {
-            &::after {
-                opacity: 1;
+            #{$usps}__block-bg {
+                background-size: 110%;
             }
         }
+    }
+
+    &__block-content {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__block-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-size: 100%;
+        background-position: center;
+        transition: $transition-default;
+    }
+
+    &__block-title {
+        text-align: center;
     }
 
     &__block-text {

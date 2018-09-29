@@ -3,7 +3,7 @@
     color: map-deep-get($colors, "white", "default");
     border: 1px solid map-deep-get($colors, "blue", "default");
     padding: 12px 25px;
-    border-radius: $border-radius;
+    border-radius: $border-radius-small;
     transition: $transition-default;
     display: inline-flex;
     flex-shrink: 0;

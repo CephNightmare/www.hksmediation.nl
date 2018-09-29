@@ -2,14 +2,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 class="h2 h2--lined blue-section__title">Ervaringen van anderen</h3>
+                <h3 class="h2 h2--lined blue-section__title">{{ entry.testimonialsTitle }}</h3>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <div class="blue-section__testimonials">
-                    {% for testimonial in entry.testimonials %}
+                    {% set testimonials = entry.testimonials.all() %}
+                    {% for testimonial in testimonials %}
                         {% include 'partials/testimonial.html.twig' with { 'testimonial': testimonial } %}
                     {% endfor %}
                 </div>

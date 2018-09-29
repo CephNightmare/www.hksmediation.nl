@@ -1,0 +1,62 @@
+.blog-item {
+    border-radius: $border-radius;
+    background-color: map-deep-get($colors, "white", "default");
+    box-shadow: $box-shadow;
+    display: block;
+    overflow: hidden;
+    color: map-deep-get($colors, "blue", "dark");
+    position: relative;
+    margin-bottom: rem-calc(30);
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    $blog-item: &;
+
+    &__bg {
+        height: rem-calc(250);
+        background-size: 100%;
+        background-position: center;
+        transition: $transition-default;
+    }
+
+    &__content {
+        padding: 25px 25px 50px;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        font-size: rem-calc(14);
+    }
+
+    &__read-more {
+        font-size: rem-calc(14);
+        position: absolute;
+        bottom: rem-calc(20);
+        left: rem-calc(25);
+        display: flex;
+        align-items: center;
+        color: map-deep-get($colors, "blue", "default");
+
+        svg {
+            height: rem-calc(20);
+            width: rem-calc(14);
+            margin-left: rem-calc(5);
+            transition: $transition-default;
+            fill: map-deep-get($colors, "blue", "default");
+        }
+    }
+
+    &:hover,
+    &:focus {
+        #{$blog-item}__bg {
+            background-size: 120%;
+        }
+
+        #{$blog-item}__read-more svg {
+            margin-left: rem-calc(10);
+        }
+    }
+}

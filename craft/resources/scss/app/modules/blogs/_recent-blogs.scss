@@ -1,0 +1,9 @@
+.recent-blogs {
+    &__list {
+        margin: rem-calc(40) 0;
+
+        @include media-breakpoint-up(md) {
+            margin: rem-calc(60) 0;
+        }
+    }
+}

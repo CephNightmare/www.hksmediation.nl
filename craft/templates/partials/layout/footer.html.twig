@@ -1,0 +1,80 @@
+<footer class="footer">
+    <div class="footer-contact">
+        <div class="footer-contact__bg"></div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-24 col-md-20 col-lg-16">
+                    <div class="footer-contact__block-wrapper">
+                        <div class="footer-contact__info-block">
+                            <h3 class="footer-contact__info-block-title">Contactinformatie</h3>
+
+                            <div class="footer-contact__info-row">
+                                <div class="footer-contact__info-row-icon">
+                                    <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z" fill="#fff"/></svg>
+                                    <div class="footer-contact__info-row-text">Oranjestraat 19, 3245VD, Nieuwe-Tonge</div>
+                                </div>
+                            </div>
+
+                            <div class="footer-contact__info-row">
+                                <div class="footer-contact__info-row-icon">
+                                    <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z" fill="#fff"/></svg>
+                                    <div class="footer-contact__info-row-text">Oranjestraat 19, 3245VD, Nieuwe-Tonge</div>
+                                </div>
+                            </div>
+
+                            <div class="footer-contact__info-row">
+                                <div class="footer-contact__info-row-icon">
+                                    <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z" fill="#fff"/></svg>
+                                    <div class="footer-contact__info-row-text">Oranjestraat 19, 3245VD, Nieuwe-Tonge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-contact__form-block">
+                        <h3 class="footer-contact__form-block-title">Neem contact op</h3>
+                        <p class="footer-contact__form-block-text">We komen snel met een reactie</p>
+
+                        {% macro errorList(errors) %}
+                            {% if errors %}
+                                <ul class="errors">
+                                    {% for error in errors %}
+                                        <li>{{ error }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        {% endmacro %}
+
+                        {% from _self import errorList %}
+
+                        <form method="post" action="" accept-charset="UTF-8">
+                            {{ csrfInput() }}
+                            <input type="hidden" name="action" value="contact-form/send">
+
+                            <h3><label for="from-name">Your Name</label></h3>
+                            <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+                            <h3><label for="from-email">Your Email</label></h3>
+                            <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+
+                            <h3><label for="subject">Subject</label></h3>
+                            <input id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
+                            {{ message is defined and message ? errorList(message.getErrors('subject')) }}
+
+                            <h3><label for="message">Message</label></h3>
+                            <textarea rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+
+                            <input type="submit" value="Send">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>

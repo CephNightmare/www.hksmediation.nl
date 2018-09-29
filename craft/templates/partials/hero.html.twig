@@ -1,5 +1,5 @@
 <div class="hero">
-    <div class="hero__bg" style="background-image: url('{{ entry.heroImage.first().url }}')"></div>
+    <div class="hero__bg b-lazy" data-src="{{ entry.heroImage.one().url }}"></div>
 
     <div class="hero__content">
         <div class="container">
@@ -11,8 +11,13 @@
                     </div>
 
                     <div class="hero__buttons">
-                        <a href="#" class="hero__button button">Neem contact op</a>
-                        <a href="#" class="hero__button button button--white">Lees meer</a>
+                        {% if entry.heroButtonOneLink.one() is not null %}
+                            <a href="{{ entry.heroButtonOneLink.one().url }}" class="hero__button button">{{ entry.heroButtonOneTitle }}</a>
+                        {% endif %}
+
+                        {% if entry.heroButtonTwoLink.one() is not null %}
+                            <a href="{{ entry.heroButtonTwoLink.one().url }}" class="hero__button button button--white">{{ entry.heroButtonTwoTitle }}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

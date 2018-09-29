@@ -9,33 +9,20 @@
 
         <div class="usps__list">
             <div class="row">
-                <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <a href="#" class="usps__block">
-                        <h3 class="usps__block-title">{{ entry.usp1Title }}</h3>
-                        <p class="usps__block-text">{{ entry.usp1Text }}</p>
-                    </a>
-                </div>
 
-                <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <a href="#" class="usps__block">
-                        <h3 class="usps__block-title">{{ entry.usp2Title }}</h3>
-                        <p class="usps__block-text">{{ entry.usp2Text }}</p>
-                    </a>
-                </div>
+                {% set usps = entry.usps.all() %}
+                {% for usp in usps %}
+                    <div class="col-xs-24 col-sm-12 col-lg-6">
+                        <a href="#" class="usps__block">
+                            <span class="usps__block-bg b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ usp.uspBackground.one().url }}"></span>
+                            <div class="usps__block-content">
+                                <h3 class="usps__block-title">{{ usp.uspTitle }}</h3>
+                                <p class="usps__block-text">{{ usp.uspText }}</p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
 
-                <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <a href="#" class="usps__block">
-                        <h3 class="usps__block-title">{{ entry.usp3Title }}</h3>
-                        <p class="usps__block-text">{{ entry.usp3Text }}</p>
-                    </a>
-                </div>
-
-                <div class="col-xs-24 col-sm-12 col-lg-6">
-                    <a href="#" class="usps__block">
-                        <h3 class="usps__block-title">{{ entry.usp4Title }}</h3>
-                        <p class="usps__block-text">{{ entry.usp4Text }}</p>
-                    </a>
-                </div>
             </div>
         </div>
     </div>

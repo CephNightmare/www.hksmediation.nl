@@ -7,7 +7,7 @@
                     <div class="text-block__text">
                         {{ entry.textBlockText }}
                     </div>
-                    <a href="{{ entry.textBlockButtonLink.first() is not null ? entry.textBlockButtonLink.first().url }}"
+                    <a href="{{ entry.textBlockButtonLink.one() is not null ? entry.textBlockButtonLink.one().url }}"
                        class="text-block__button button">
                         {{ entry.textBlockButtonTitle }}
                         <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
             </div>
             <div class="col-xs-24 col-md-12">
                 <div class="text-block__image-wrapper">
-                    <img class="text-block__image" src="{{ entry.textBlockImage.first().getUrl('textBlockImage') }}"
+                    <img class="text-block__image b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ entry.textBlockImage.one().getUrl('textBlockImage') }}"
                          alt="{{ entry.textBlockTitle }}">
                 </div>
             </div>

@@ -5,12 +5,15 @@
     margin-top: rem-calc(-30);
     $groups: &;
 
+    @include media-breakpoint-up(lg) {
+        margin-top: rem-calc(-60);
+    }
+
     &__item {
         background: map-deep-get($colors, "white", "default");
         color: map-deep-get($colors, "blue", "dark");
         transition: $transition-default;
         display: block;
-        box-shadow: $box-shadow;
         padding: 25px 35px 25px 25px;
         margin-bottom: rem-calc(30);
         border-radius: $border-radius;
@@ -20,35 +23,29 @@
         }
 
         &--rood {
-            #{$groups}__title {
-                color: map-deep-get($colors, "red", "default");
-            }
+            background-color: map-deep-get($colors, "red", "default");
 
             &:hover,
             &:focus {
-                background: map-deep-get($colors, "red", "lightest");
+                background-color: map-deep-get($colors, "red", "light");
             }
         }
 
         &--grijs {
-            #{$groups}__title {
-                color: map-deep-get($colors, "gray", "default");
-            }
+            background-color: map-deep-get($colors, "gray", "default");
 
             &:hover,
             &:focus {
-                background: map-deep-get($colors, "gray", "lightest");
+                background-color: map-deep-get($colors, "gray", "light");
             }
         }
 
         &--groen {
-            #{$groups}__title {
-                color: map-deep-get($colors, "green", "default");
-            }
+            background-color: map-deep-get($colors, "green", "default");
 
             &:hover,
             &:focus {
-                background: map-deep-get($colors, "green", "lightest");
+                background-color: map-deep-get($colors, "green", "light");
             }
         }
     }
@@ -56,10 +53,16 @@
     &__title {
         display: flex;
         align-items: center;
+        color: map-deep-get($colors, "white", "default");
     }
 
     &__text {
         font-size: rem-calc(14);
+        color: map-deep-get($colors, "white", "default");
+    }
+
+    &__read-more {
+        color: map-deep-get($colors, "white", "default");
     }
 
     &__icon {

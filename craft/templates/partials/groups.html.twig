@@ -1,11 +1,12 @@
 <div class="groups">
     <div class="container">
         <div class="row justify-content-center">
-            {% for group in entry.group %}
+            {% set groups = entry.group.all() %}
+            {% for group in groups %}
                 <div class="col-xs-24 col-sm-16 col-lg-8">
-                    <a href="{{ group.groupUrl.first().url  }}" class="groups__item groups__item--{{ group.color }}">
+                    <a href="{{ group.groupUrl.one().url  }}" class="groups__item groups__item--{{ group.color }}">
                         <h2 class="groups__title h6">
-                            <img class="groups__icon" src="/public/images/{{ group.color }}-stoel.png" />
+                            <img class="groups__icon" src="/public/images/wit-stoel.png" />
                             {{ group.groupTitle }}
                         </h2>
                         <p class="groups__text">

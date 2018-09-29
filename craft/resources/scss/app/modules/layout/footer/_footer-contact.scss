@@ -1,0 +1,6 @@
+.footer-contact {
+    &__block-wrapper {
+        background-color: map-deep-get($colors, "white", "default");
+        box-shadow: $box-shadow;
+    }
+}

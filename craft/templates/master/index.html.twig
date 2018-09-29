@@ -16,68 +16,11 @@
 <div id="barba-wrapper">
     <div class="barba-container">
 
-        <header id="header" class="header" :class="{ 'header--active': menuExpanded }">
-            <div class="header__top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="header__top-content">
-                                <div class="header__top-address">
-                                    {{ headerTop.headerAddress }}
-                                </div>
-                                <div class="header__top-contact">
-                                    <a href="mailto:{{ headerTop.email }}"
-                                       class="header__top-contact-link">{{ headerTop.emailTitle }}</a>
-                                    <a href="mailto:{{ headerTop.phonenumber }}"
-                                       class="header__top-contact-link">{{ headerTop.phonenumberTitle }}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header__main">
-                <div class="container">
-
-                    <div class="col">
-                        <div class="header__main-content">
-                            <a href="/" class="header__logo">
-                                <img src="/public/images/logo.png" alt="">
-                            </a>
-
-                            <nav class="header__nav">
-                                <ul class="header__list">
-                                    <li class="header__list-item">
-                                        <a href="#" class="header__list-link header__list-link--active">Home</a>
-                                    </li>
-                                    <li class="header__list-item">
-                                        <a href="#" class="header__list-link header__list-link--active">Over HKS
-                                            Mediation</a>
-                                    </li>
-                                    <li class="header__list-item">
-                                        <a href="#" class="header__list-link header__list-link--active">Wat is
-                                            mediation?</a>
-                                    </li>
-                                    <li class="header__list-item">
-                                        <a href="#" class="header__list-link header__list-link--active">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                            <a href="#" @click.prevent="menuExpanded = !menuExpanded" class="d-block d-lg-none header__hamburger hamburger hamburger--squeeze" :class="{ 'is-active hamburger--inverted': menuExpanded }" type="button">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </header>
+        {% include 'partials/layout/header.html.twig' %}
 
         {% block content %}{% endblock %}
+
+        {% include 'partials/layout/footer.html.twig' %}
     </div>
 </div>
 
