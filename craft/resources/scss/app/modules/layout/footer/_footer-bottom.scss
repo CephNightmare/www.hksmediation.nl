@@ -1,0 +1,18 @@
+.footer-bottom {
+    background-color: map-deep-get($colors, "blue", "default");
+    height: rem-calc(40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem-calc(12);
+    color: map-deep-get($colors, "white", "default");
+
+    &__link {
+        color: map-deep-get($colors, "white", "default");
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

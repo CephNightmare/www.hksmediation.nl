@@ -1,0 +1,55 @@
+.page-title {
+    background-color: map-deep-get($colors, "blue", "dark");
+    color: map-deep-get($colors, "white", "default");
+    height: 40vh;
+    min-height: rem-calc(400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+        height: 75vh;
+        min-height: rem-calc(600);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(map-deep-get($colors, "black", "default"), .4);
+        z-index: 2;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+    }
+
+    &__title {
+        text-align: center;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: rem-calc(60);
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: rem-calc(160);
+        }
+    }
+}

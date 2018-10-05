@@ -1,0 +1,18 @@
+.footer-main {
+    background-color: map-deep-get($colors, "blue", "lightest");
+    color: map-deep-get($colors, "blue", "dark");
+    padding: 80px 0;
+
+    &__title {
+        margin-top: rem-calc(50);
+
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
+    }
+
+    &__logo {
+        max-width: rem-calc(260);
+        display: inline-block;
+    }
+}

@@ -7,7 +7,9 @@
     transition: $transition-default;
     display: inline-flex;
     flex-shrink: 0;
+    font-family: $font-default;
     align-items: center;
+    cursor: pointer;
 
     svg {
         height: rem-calc(20);

@@ -3,7 +3,7 @@
 $colors: (
     "white": ("default": #ffffff),
     "black": ("default": #000000),
-    "gray": ("darker": #c2c2c2, "dark": #e1e1e1, "default": #76777b, "light": lighten(#76777b, 25%), "lightest": lighten(#76777b, 40%)),
+    "gray": ("darker": #c2c2c2, "dark": #e1e1e1, "default": #76777b, "light": lighten(#76777b, 25%), "lighter": lighten(#76777b, 40%), "lightest": #f9f9f9),
     "blue": ("darker": #13293D, "dark": #385573, "default": #0071cf, "light": lighten(#0071cf, 25%), "lightest": lighten(#0071cf, 53%)),
     "green": ("dark": #00a887, "default": #00a887, "light": lighten(#00a887, 25%), "lightest": lighten(#00a887, 50%)),
     "red": ("dark": darken(#ff3c20, 25%), "default": #ff3c20, "light": lighten(#ff3c20, 25%), "lightest": lighten(#ff3c20, 40%)),

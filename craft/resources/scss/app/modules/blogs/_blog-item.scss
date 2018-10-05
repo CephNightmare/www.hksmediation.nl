@@ -7,17 +7,16 @@
     color: map-deep-get($colors, "blue", "dark");
     position: relative;
     margin-bottom: rem-calc(30);
+    $blog-item: &;
 
     @include media-breakpoint-up(md) {
         height: 100%;
         margin-bottom: 0;
     }
 
-    $blog-item: &;
-
     &__bg {
-        height: rem-calc(250);
-        background-size: 100%;
+        height: rem-calc(200);
+        background-size: cover;
         background-position: center;
         transition: $transition-default;
     }
@@ -51,10 +50,6 @@
 
     &:hover,
     &:focus {
-        #{$blog-item}__bg {
-            background-size: 120%;
-        }
-
         #{$blog-item}__read-more svg {
             margin-left: rem-calc(10);
         }

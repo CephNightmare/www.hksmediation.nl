@@ -43,7 +43,9 @@
     }
 
     &__text {
-        width: 80%;
+        @include media-breakpoint-up(sm) {
+            width: 80%;
+        }
 
         // Rich text editor
         /* stylelint-disable */

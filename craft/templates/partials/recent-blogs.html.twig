@@ -2,69 +2,36 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 class="h2 h2--lined recent-blogs__title">Ervaringen van anderen</h3>
-                <p class="recent-blogs__text">Publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text</p>
+                <h3 class="h2 h2--lined recent-blogs__title">{{ entry.recentBlogsTitle is not null ? entry.recentBlogsTitle : recentBlogs.recentBlogsTitle }}</h3>
+                <p class="recent-blogs__text">{{ entry.recentBlogsText is not null ? entry.recentBlogsText : recentBlogs.recentBlogsText }}</p>
             </div>
         </div>
 
         <div class="recent-blogs__list">
-            <div class="row">
-                <div class="col-xs-24 col-sm-12 col-md-8">
-                    <a href="#" class="blog-item">
-                        {#data-src-small="{{ asset.getUrl('thumb') }}"#}
-                        <div class="blog-item__bg b-lazy" data-src="https://www.rd.nl/image/contentid/policy:1.534031:1467342504/2016-03-12-ACC9-vankranenburg-4-FC-V-web.jpg?f=16x9&$p$f=b9d4187"></div>
-                        <div class="blog-item__content">
-                            <h3 class="h6 blog-item__title">Find out which posts are a hit with Blogger's built in an.</h3>
-                            <p class="blog-item__text">
-                                Consectetur et.dolore magna
-                                aliquauis aute irure dolor eiusmod.
-                            </p>
-                        </div>
+            <div class="row justify-content-center">
+                {% set blogs = craft.entries.section('blog').limit(3) %}
 
-                        <span class="blog-item__read-more">
+                {% for blog in blogs %}
+                    <div class="col-xs-24 col-sm-12 col-md-8">
+                        <a href="{{ blog.url }}" class="blog-item">
+                            {#data-src-small="{{ asset.getUrl('thumb') }}"#}
+                            <div class="blog-item__bg b-lazy" data-src-small="{{ blog.image.one().getUrl('blogThumbnailSmall') }}" data-src="{{ blog.image.one().getUrl('blogThumbnailMedium') }}"></div>
+                            <div class="blog-item__content">
+                                <h3 class="h6 blog-item__title">{{ blog.title }}</h3>
+                                <p class="blog-item__text">
+                                    {{ blog.intro|striptags|slice(0, 100) }}
+                                    {{ blog.intro|length > 100 ? '...' : '' }}
+                                </p>
+                            </div>
+
+                            <span class="blog-item__read-more">
                             {{ base.readMore }}
-                            <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
+                                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
                         </span>
-                    </a>
-                </div>
-
-                <div class="col-xs-24 col-sm-12 col-md-8">
-                    <a href="#" class="blog-item">
-                        <div class="blog-item__bg b-lazy" data-src="https://www.rd.nl/image/contentid/policy:1.534031:1467342504/2016-03-12-ACC9-vankranenburg-4-FC-V-web.jpg?f=16x9&$p$f=b9d4187"></div>
-                        <div class="blog-item__content">
-                            <h3 class="h6 blog-item__title">Find out which posts are a hit with Blogger's built in an.</h3>
-                            <p class="blog-item__text">
-                                Consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna
-                                aliquauis aute irure dolor eiusmod.
-                            </p>
-                        </div>
-
-                        <span class="blog-item__read-more">
-                            {{ base.readMore }}
-                            <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
-                        </span>
-                    </a>
-                </div>
-
-                <div class="col-xs-24 col-sm-12 col-md-8">
-                    <a href="#" class="blog-item">
-                        <div class="blog-item__bg b-lazy" data-src="https://www.rd.nl/image/contentid/policy:1.534031:1467342504/2016-03-12-ACC9-vankranenburg-4-FC-V-web.jpg?f=16x9&$p$f=b9d4187"></div>
-                        <div class="blog-item__content">
-                            <h3 class="h6 blog-item__title">Find out which posts are a hit with Blogger's built in an.</h3>
-                            <p class="blog-item__text">
-                                Consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna
-                            </p>
-                        </div>
-
-                        <span class="blog-item__read-more">
-                            {{ base.readMore }}
-                            <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg>
-                        </span>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-
 </div>

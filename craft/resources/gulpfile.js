@@ -117,7 +117,6 @@ gulp.task('scss_lint', function () {
 
 gulp.task('app-scss', function () {
     return gulp.src(config.scss.app.src)
-        .pipe(plumber())
         .pipe(expect(config.scss.app.src))
         .pipe(sass({
             errLogToConsole: true,

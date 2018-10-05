@@ -1,3 +1,9 @@
 .form {
-    //INSERT FORM STYLING HERE
+    &__row {
+        margin-top: rem-calc(30);
+    }
+
+    &__button {
+        margin-top: rem-calc(30);
+    }
 }

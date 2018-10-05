@@ -23,6 +23,7 @@ h2, .h2 {
 
     @include media-breakpoint-up(md) {
         font-size: rem-calc(36);
+        margin-bottom: 0;
     }
 
     &--lined {
@@ -55,12 +56,21 @@ h2, .h2 {
 h3, .h3 {
     font-family: $font-default;
     font-size: rem-calc(24);
+
+    &--light {
+        font-weight: 400;
+        font-family: $font-heading;
+    }
 }
 
 h6, .h6 {
     font-family: $font-default;
     font-size: rem-calc(18);
     font-weight: 400;
+
+    &--bold {
+        font-weight: 700;
+    }
 }
 
 p {

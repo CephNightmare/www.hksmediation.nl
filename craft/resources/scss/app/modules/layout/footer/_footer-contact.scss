@@ -1,6 +1,94 @@
 .footer-contact {
+    position: relative;
+    margin-top: rem-calc(200);
+    padding-bottom: rem-calc(100);
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(map-deep-get($colors, "black", "default"), .5);
+        z-index: 2;
+    }
+
+    &__bg {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('/public/images/contact.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__info-block {
+        background-color: map-deep-get($colors, "blue", "dark");
+        color: map-deep-get($colors, "white", "default");
+        padding: 50px 25px;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            max-width: rem-calc(320);
+        }
+    }
+
+    &__info-row {
+        display: flex;
+        margin-top: rem-calc(40);
+    }
+
+    &__info-row-icon {
+        margin-right: rem-calc(25);
+    }
+
+    &__info-row-text {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+    }
+
+    &__info-link {
+        color: map-deep-get($colors, "white", "default");
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
     &__block-wrapper {
         background-color: map-deep-get($colors, "white", "default");
         box-shadow: $box-shadow;
+        margin-top: rem-calc(-100);
+        position: relative;
+        z-index: 3;
+
+        @include media-breakpoint-up(sm) {
+            display: flex;
+            flex-shrink: 0;
+        }
+    }
+
+    &__form-block {
+        width: 100%;
+        padding: 40px 25px;
+
+        @include media-breakpoint-up(sm) {
+            padding: 80px 50px 50px;
+        }
+    }
+
+    &__form-block-title {
+        color: map-deep-get($colors, "blue", "default");
+    }
+
+    &__form-block-text {
+        margin-top: 0;
+        font-family: $font-heading;
     }
 }
