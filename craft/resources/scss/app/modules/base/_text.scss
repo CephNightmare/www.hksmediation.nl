@@ -52,5 +52,14 @@
 
     &__cta-title {
         margin-top: 0;
+        color: map-deep-get($colors, "blue", "default");
+    }
+
+    &__cta-text {
+        font-family: $font-heading;
+
+        @include media-breakpoint-up(md) {
+            width: 80%;
+        }
     }
 }

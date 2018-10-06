@@ -1,0 +1,7 @@
+.blog-overview {
+    margin: rem-calc(40) 0;
+
+    @include media-breakpoint-up(md) {
+        margin: rem-calc(80) 0;
+    }
+}

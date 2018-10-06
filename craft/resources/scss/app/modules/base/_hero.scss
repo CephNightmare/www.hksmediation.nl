@@ -5,6 +5,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    width: 200%;
+    margin-left: -50%;
+    overflow: hidden;
+
+    @include media-breakpoint-up(sm) {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
 
     &::before {
         content: "";
@@ -12,7 +22,6 @@
         left: 0;
         top: 0;
         bottom: 0;
-        //background: linear-gradient(to right, rgba(map-deep-get($colors, "blue", "default"), .65) 30%, rgba(map-deep-get($colors, "black", "default"), 0) 100%);
         background: rgba(map-deep-get($colors, "black", "default"), .4);
         width: 100%;
         z-index: 1;
@@ -26,6 +35,8 @@
         right: 0;
         top: 0;
         bottom: 0;
+        width: 50%;
+        margin: 0 auto;
     }
 
     &__content {

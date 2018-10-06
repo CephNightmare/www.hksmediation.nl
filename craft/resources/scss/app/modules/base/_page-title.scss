@@ -2,11 +2,21 @@
     background-color: map-deep-get($colors, "blue", "dark");
     color: map-deep-get($colors, "white", "default");
     height: 40vh;
-    min-height: rem-calc(400);
+    min-height: rem-calc(200);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    width: 200%;
+    margin-left: -50%;
+    overflow: hidden;
+
+    @include media-breakpoint-up(sm) {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
 
     @include media-breakpoint-up(md) {
         height: 75vh;
@@ -33,6 +43,8 @@
         background-size: cover;
         background-position: center;
         z-index: 1;
+        width: 50%;
+        margin: 0 auto;
     }
 
     &__content {
@@ -43,10 +55,7 @@
 
     &__title {
         text-align: center;
-
-        @include media-breakpoint-up(sm) {
-            margin-top: rem-calc(60);
-        }
+        margin-top: rem-calc(60);
 
         @include media-breakpoint-up(md) {
             margin-top: rem-calc(160);

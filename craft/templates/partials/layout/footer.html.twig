@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="footer" class="footer">
 
     <div class="footer-contact">
         <div class="footer-contact__bg"></div>
@@ -6,9 +6,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xs-24 col-md-20 col-lg-16">
-
-                    <div class="footer-contact__block-wrapper">
-
+                    <div id="footer-contact-block" class="footer-contact__block-wrapper">
                         <div class="footer-contact__info-block">
                             <h3 class="h3 h3--light footer-contact__info-block-title">{{ footerContact.infoTitle }}</h3>
 
@@ -54,37 +52,44 @@
 
                             {% from _self import errorList %}
 
-                            <form class="form" method="post" action="" accept-charset="UTF-8">
-                                {{ csrfInput() }}
+                            {% if craft.app.session.hasFlash('notice') %}
+                                <p class="message message--success">{{ craft.app.session.getFlash('notice') }}</p>
+                            {% elseif craft.app.session.hasFlash('error') %}
+                                <p class="message message--error">{{ craft.app.session.getFlash('error') }}</p>
+                            {% endif %}
+                            {% if not craft.app.session.hasFlash('notice') %}
+                                <form class="form" method="post" action="#footer-contact-block" accept-charset="UTF-8">
+                                    {{ csrfInput() }}
 
-                                <input type="hidden" name="action" value="contact-form/send">
+                                    <input type="hidden" name="action" value="contact-form/send">
 
-                                <div class="form__row">
-                                    <input id="from-name" placeholder="Uw naam" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
-                                    {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
-                                </div>
+                                    <div class="form__row">
+                                        <input id="from-name" placeholder="Uw naam" v-validate="'required'" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                                        {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+                                        <span class="form__error">{{ '{{' }} errors.first('fromName') {{ '}}' }}</span>
+                                    </div>
 
-                                <div class="form__row">
-                                    <input id="from-email" placeholder="Uw Emailadres" type="text" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
-                                    {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
-                                </div>
+                                    <div class="form__row">
+                                        <input id="from-email" placeholder="Uw Emailadres" v-validate="'required|email'" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                                        {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+                                        <span class="form__error">{{ '{{' }} errors.first('fromEmail') {{ '}}' }}</span>
+                                    </div>
 
-                                <div class="form__row">
-                                    <textarea rows="4" placeholder="Uw bericht" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
-                                    {{ message is defined and message ? errorList(message.getErrors('message')) }}
-                                </div>
+                                    <div class="form__row">
+                                        <textarea rows="4" placeholder="Uw bericht" v-validate="'required'" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                                        {{ message is defined and message ? errorList(message.getErrors('message')) }}
+                                        <span class="form__error">{{ '{{' }} errors.first('message') {{ '}}' }}</span>
+                                    </div>
 
-                                <button type="submit" class="form__button button">Verstuur</button>
-                            </form>
+                                    <button type="submit" class="form__button button">Verstuur</button>
+                                </form>
+                            {% endif %}
 
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="footer-main">

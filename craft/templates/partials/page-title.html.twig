@@ -1,5 +1,7 @@
 <div class="page-title">
-    <div class="page-title__bg b-lazy" data-src="{{ entry.image.one().getUrl('heroImageLarge') }}"></div>
+    {% if (entry.image) %}
+        <div class="page-title__bg b-lazy" data-src="{{ entry.image.one().getUrl('heroImageLarge') }}"></div>
+    {% endif %}
 
     <div class="page-title__content">
         <div class="container">

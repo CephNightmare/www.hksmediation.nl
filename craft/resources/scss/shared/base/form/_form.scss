@@ -1,6 +1,31 @@
 .form {
+    &__row-wrapper {
+        overflow: hidden;
+
+        @include media-breakpoint-up(sm) {
+            margin: 0 rem-calc(-10);
+        }
+    }
+
     &__row {
         margin-top: rem-calc(30);
+        width: 100%;
+        overflow: hidden;
+
+        &--half {
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+                padding: 0 10px;
+                float: left;
+            }
+        }
+    }
+
+    &__error {
+        color: map-deep-get($colors, "validation", "invalid");
+        font-size: rem-calc(14);
+        display: inline-block;
+        margin-top: rem-calc(10);
     }
 
     &__button {

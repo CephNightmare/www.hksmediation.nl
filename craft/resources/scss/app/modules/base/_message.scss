@@ -1,0 +1,15 @@
+.message {
+    border-radius: $border-radius;
+    color: map-deep-get($colors, "white", "default");
+    padding: 20px 30px;
+    line-height: 1.4;
+    margin: rem-calc(30) 0;
+
+    &--success {
+        background-color: map-deep-get($colors, "validation", "valid");
+    }
+
+    &--error {
+        background-color: map-deep-get($colors, "validation", "invalid");
+    }
+}

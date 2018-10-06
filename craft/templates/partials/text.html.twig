@@ -1,14 +1,65 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-xs-24 col-md-18 col-md-12">
-            <section class="text">
+            <section id="text" class="text">
                 <div class="text__content-wrapper">
                     <div class="text__intro">{{ entry.intro }}</div>
                     <div class="text__content">{{ entry.text }}</div>
                 </div>
 
                 <div class="text__cta">
-                    <h2 class="text__cta-title">Neem contact op</h2>
+                    <h3 class="h3 h3--light text__cta-title">Neem contact op</h3>
+                    <p class="text__cta-text">
+                        Wilt u hier meer over weten? Of wilt u weten wat HKS Mediation voor u kan betekenen?
+                        Neem dan gerust contact op. We zullen snel reageren.
+                    </p>
+
+                    {% macro errorList(errors) %}
+                        {% if errors %}
+                            <ul class="errors">
+                                {% for error in errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endmacro %}
+
+                    {% from _self import errorList %}
+                    {% if craft.app.session.hasFlash('notice') %}
+                        <p class="message message--success">{{ craft.app.session.getFlash('notice') }}</p>
+                    {% elseif craft.app.session.hasFlash('error') %}
+                        <p class="message message--error">{{ craft.app.session.getFlash('error') }}</p>
+                    {% endif %}
+
+                    {% if not craft.app.session.hasFlash('notice') %}
+                        <form class="form" method="post" action="" accept-charset="UTF-8">
+                            {{ csrfInput() }}
+
+                            <input type="hidden" name="action" value="contact-form/send">
+
+                            <div class="form__row-wrapper">
+                                <div class="form__row form__row--half">
+                                    <input id="from-name" placeholder="Uw naam" v-validate="'required'" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+                                    {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+                                    <span class="form__error">{{ '{{' }} errors.first('fromName') {{ '}}' }}</span>
+                                </div>
+
+                                <div class="form__row form__row--half">
+                                    <input id="from-email" placeholder="Uw Emailadres" v-validate="'required|email'" type="text" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+                                    {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+                                    <span class="form__error">{{ '{{' }} errors.first('fromEmail') {{ '}}' }}</span>
+                                </div>
+                            </div>
+
+                            <div class="form__row">
+                                <textarea rows="4" placeholder="Uw bericht" v-validate="'required'" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+                                {{ message is defined and message ? errorList(message.getErrors('message')) }}
+                                <span class="form__error">{{ '{{' }} errors.first('message') {{ '}}' }}</span>
+                            </div>
+
+                            <button type="submit" class="form__button button">Verstuur</button>
+                        </form>
+                    {% endif %}
                 </div>
             </section>
         </div>
