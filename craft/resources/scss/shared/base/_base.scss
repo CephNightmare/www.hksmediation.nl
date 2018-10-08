@@ -36,6 +36,35 @@ img {
     max-width: 100%;
 }
 
+blockquote {
+    font-style: italic;
+    font-family: $font-heading;
+    width: 80%;
+    margin: rem-calc(50) auto;
+    position: relative;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "\"";
+        font-size: rem-calc(32);
+        display: inline-block;
+        color: map-deep-get($colors, "blue", "default");
+        position: absolute;
+        left: rem-calc(-20);
+        top: rem-calc(-10);
+    }
+
+    /* stylelint-disable */
+    p {
+        color: map-deep-get($colors, "blue", "default");
+        display: inline;
+    }
+    /* stylelint-enable */
+}
+
 ::selection {
     background-color: map-deep-get($colors, "red", "default");
     color: map-deep-get($colors, "white", "default");

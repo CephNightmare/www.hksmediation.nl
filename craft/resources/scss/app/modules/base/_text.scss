@@ -1,6 +1,6 @@
 .text {
-    margin-top: rem-calc(-100);
     margin-bottom: rem-calc(80);
+    margin-top: rem-calc(-100);
     position: relative;
     z-index: 2;
 
@@ -10,12 +10,16 @@
         padding: 25px;
 
         /* stylelint-disable */
-
         h1, h2, h3, h4, h5, h6 {
             margin-top: rem-calc(30);
+            margin-bottom: rem-calc(10);
             color: map-deep-get($colors, "blue", "dark");
         }
 
+        p {
+            margin-top: 0;
+            margin-bottom: rem-calc(30);
+        }
         /* stylelint-enable */
 
         @include media-breakpoint-up(sm) {
@@ -25,16 +29,13 @@
 
     &__intro {
         font-size: rem-calc(21);
+        margin-bottom: rem-calc(30);
 
         /* stylelint-disable */
         p {
             line-height: 1.7;
         }
         /* stylelint-enable */
-    }
-
-    &__content {
-        margin-top: rem-calc(30);
     }
 
     &__cta {

@@ -1,10 +1,15 @@
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-xs-24 col-md-18 col-md-12">
-            <section id="text" class="text">
+<section id="text" class="text">
                 <div class="text__content-wrapper">
                     <div class="text__intro">{{ entry.intro }}</div>
                     <div class="text__content">{{ entry.text }}</div>
+
+                    {% for subService in entry.subServices %}
+                        <div id="sub-service-{{ subService.id }}">
+                            <h4>{{ subService.subServiceTitle }}</h4>
+                            {{ subService.subServiceText }}
+                        </div>
+                    {% endfor %}
+
                 </div>
 
                 <div class="text__cta">
@@ -62,6 +67,3 @@
                     {% endif %}
                 </div>
             </section>
-        </div>
-    </div>
-</div>

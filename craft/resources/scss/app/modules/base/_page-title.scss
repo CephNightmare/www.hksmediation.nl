@@ -61,4 +61,10 @@
             margin-top: rem-calc(160);
         }
     }
+
+    &--gray {
+        &::before {
+            background-color: rgba(map-deep-get($colors, "gray", "dark"), .6);
+        }
+    }
 }

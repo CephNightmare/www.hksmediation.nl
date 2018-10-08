@@ -1,5 +1,5 @@
-<div class="page-title">
-    {% if (entry.image) %}
+<div class="page-title{% if color is defined %} page-title--{{ color }}{% endif %}">
+    {% if (entry.image and entry.image.one()) %}
         <div class="page-title__bg b-lazy" data-src="{{ entry.image.one().getUrl('heroImageLarge') }}"></div>
     {% endif %}
 

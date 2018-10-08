@@ -1,0 +1,26 @@
+.sub-services {
+    position: fixed;
+    left: rem-calc(20);
+    top: rem-calc(230);
+    z-index: 3;
+    width: 20%;
+    background-color: map-deep-get($colors, "white", "default");
+    border: 1px solid map-deep-get($colors, "gray", "lighter");
+
+    &__link {
+        display: block;
+        padding: 20px;
+        border-bottom: 1px solid map-deep-get($colors, "gray", "lighter");
+        background-color: map-deep-get($colors, "white", "default");
+        transition: $transition-default;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: map-deep-get($colors, "blue", "dark");
+            color: map-deep-get($colors, "white", "default");
+        }
+    }
+}

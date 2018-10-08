@@ -4,7 +4,7 @@ Barba.Dispatcher.on("transitionCompleted", function () {
             return {
                 bLazy: null,
                 MoveToInstance: new MoveTo({
-                    tolerance: 100,
+                    tolerance: 50,
                     duration: 800
                 }),
                 formDictionary: {
@@ -86,6 +86,7 @@ Barba.Dispatcher.on("transitionCompleted", function () {
             Init() {
                 this.Blazy();
                 this.Barba();
+                this.SmoothScroll();
                 this.Veevalidate();
                 this.Axios();
             },
@@ -156,13 +157,15 @@ Barba.Dispatcher.on("transitionCompleted", function () {
                 });
             },
             SmoothScroll() {
+                const that = this;
+
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     if (anchor.getAttribute('href').length > 1) {
                         anchor.addEventListener('click', function (e) {
                             e.preventDefault();
 
                             let target = document.querySelector(this.getAttribute('href'));
-                            Listeners.MoveToInstance.move(target);
+                            that.MoveToInstance.move(target);
                         });
                     }
                 });

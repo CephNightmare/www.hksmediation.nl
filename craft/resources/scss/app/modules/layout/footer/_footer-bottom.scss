@@ -6,7 +6,9 @@
     justify-content: center;
     font-size: rem-calc(12);
     color: map-deep-get($colors, "white", "default");
-
+    position: relative;
+    z-index: 4;
+    
     &__link {
         color: map-deep-get($colors, "white", "default");
 
