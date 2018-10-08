@@ -45,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_footer-bottom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_footer-bottom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/footer/_footer-bottom.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_text.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_text.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="105">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -201,7 +201,6 @@
         <option value="$PROJECT_DIR$/craft/resources/js/app/store/store.js" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/__all-base.scss" />
         <option value="$PROJECT_DIR$/craft/resources/scss/shared/base/_base.scss" />
-        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text.scss" />
         <option value="$PROJECT_DIR$/craft/resources/js/app/global.js" />
         <option value="$PROJECT_DIR$/craft/templates/partials/text.html.twig" />
         <option value="$PROJECT_DIR$/craft/templates/blog/_entry.twig" />
@@ -210,6 +209,7 @@
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/layout/footer/_footer-contact.scss" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/layout/footer/_footer-main.scss" />
         <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/layout/footer/_footer-bottom.scss" />
+        <option value="$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text.scss" />
       </list>
     </option>
   </component>
@@ -890,12 +890,12 @@
       <workItem from="1538214529188" duration="14832000" />
       <workItem from="1538741899455" duration="19484000" />
       <workItem from="1538813094204" duration="9674000" />
-      <workItem from="1539018806609" duration="10533000" />
+      <workItem from="1539018806609" duration="10796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101767000" />
+    <option name="totallyTimeSpent" value="102030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1287,14 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/craft/templates/service/_entry.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1330,7 +1322,15 @@
     <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/layout/footer/_footer-bottom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/resources/scss/app/modules/base/_text.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
