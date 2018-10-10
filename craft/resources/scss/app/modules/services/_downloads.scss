@@ -1,0 +1,40 @@
+.downloads {
+    padding: 25px;
+    background-color: map-deep-get($colors, "white", "default");
+    border-left: 1px solid map-deep-get($colors, "gray", "lighter");
+    border-right: 1px solid map-deep-get($colors, "gray", "lighter");
+    border-bottom: 1px solid map-deep-get($colors, "gray", "lighter");
+
+    @include media-breakpoint-up(sm) {
+        padding: 50px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: rem-calc(50);
+        color: map-deep-get($colors, "blue", "default");
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 15px 25px;
+        background-color: map-deep-get($colors, "white", "default");
+        border: 1px solid map-deep-get($colors, "blue", "dark");
+        border-radius: $border-radius;
+        color: map-deep-get($colors, "blue", "dark");
+        margin: rem-calc(20) 0;
+        transition: $transition-default;
+
+        svg {
+            fill: map-deep-get($colors, "blue", "dark");
+            margin-right: rem-calc(20);
+            flex-shrink: 0;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: map-deep-get($colors, "blue", "lightest");
+        }
+    }
+}

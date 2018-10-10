@@ -1,10 +1,12 @@
 Barba.Dispatcher.on("transitionCompleted", function () {
-    if (document.getElementById('cta-form')) {
-        Layout.components.ctaForm = new Vue({
-            el: document.getElementById("cta-form"),
+    if (document.getElementById('faq')) {
+        Layout.components.faq = new Vue({
+            el: document.getElementById("faq"),
             store,
             data: function () {
-                return {}
+                return {
+                    selectedFaq: null
+                }
             },
             computed: {
             },
@@ -18,4 +20,3 @@ Barba.Dispatcher.on("transitionCompleted", function () {
         });
     }
 });
-

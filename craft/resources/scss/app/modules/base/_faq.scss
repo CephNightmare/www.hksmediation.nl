@@ -1,0 +1,44 @@
+.faq {
+    background-color: map-deep-get($colors, "blue", "lightest");
+    border-bottom: 1px solid map-deep-get($colors, "gray", "lighter");
+    padding: 25px;
+
+    @include media-breakpoint-up(sm) {
+        padding: 50px;
+    }
+
+    &__item {
+        background-color: map-deep-get($colors, "white", "default");
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        padding: 10px;
+        margin-bottom: rem-calc(30);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__question {
+        width: 100%;
+        display: block;
+        padding: 10px 40px 10px 10px;
+        overflow: hidden;
+        color: map-deep-get($colors, "blue", "dark");
+        position: relative;
+
+        svg {
+            position: absolute;
+            right: rem-calc(10);
+            top: 50%;
+            margin-top: rem-calc(-15);
+            fill: map-deep-get($colors, "blue", "dark");
+        }
+    }
+
+    &__answer {
+        border-top: 1px solid map-deep-get($colors, "gray", "lighter");
+        padding: 20px;
+        height: auto;
+    }
+}

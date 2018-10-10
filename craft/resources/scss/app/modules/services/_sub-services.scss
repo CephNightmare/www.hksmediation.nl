@@ -2,10 +2,12 @@
     position: fixed;
     left: rem-calc(20);
     top: rem-calc(230);
-    z-index: 3;
+    z-index: 1;
     width: 20%;
     background-color: map-deep-get($colors, "white", "default");
     border: 1px solid map-deep-get($colors, "gray", "lighter");
+    border-radius: $border-radius;
+    overflow: hidden;
 
     &__link {
         display: block;
