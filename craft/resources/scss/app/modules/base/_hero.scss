@@ -42,10 +42,11 @@
     &__content {
         position: relative;
         z-index: 2;
-        margin-top: rem-calc(30);
+        width: 50%;
+        margin: rem-calc(30) auto 0;
 
         @include media-breakpoint-up(md) {
-            margin-top: rem-calc(100);
+            margin: rem-calc(100) auto 0;
         }
     }
 

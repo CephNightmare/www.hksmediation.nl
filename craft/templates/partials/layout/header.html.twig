@@ -29,22 +29,40 @@
                     </a>
 
                     <nav class="header__nav">
+
+                        {% import _self as macros %}
+                        {% set activeNode = craft.navigation.getActiveNode() %}
+
                         <ul class="header__list">
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link header__list-link--active">Home</a>
-                            </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link header__list-link--active">Over HKS
-                                    Mediation</a>
-                            </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link header__list-link--active">Wat is
-                                    mediation?</a>
-                            </li>
-                            <li class="header__list-item">
-                                <a href="#" class="header__list-link header__list-link--active">Contact</a>
-                            </li>
+                            {% for node in craft.navigation.nodes({ handle: 'mainMenu', level: 1 }).all() %}
+                                {{ macros.navigationNodes(node) }}
+                            {% endfor %}
                         </ul>
+
+                        {% macro navigationNodes(node) %}
+                            {% import _self as macros %}
+
+                            <li class="header__list-item">
+                                <a href="{{ node.url }}" class="header__list-link {{ node.classes }}">{{ node.title }}</a>
+
+                                {% if node.hasDescendants %}
+                                    <ul class="header__sub-list">
+                                        {% for subnode in node.children %}
+                                            {{ macros.subNavigationNodes(subnode) }}
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+
+                        {% endmacro %}
+
+                        {% macro subNavigationNodes(node) %}
+                            {% import _self as macros %}
+
+                            <li class="header__sub-list-item">
+                                <a href="{{ node.url }}" class="header__sub-list-link">{{ node.title }}</a>
+                            </li>
+                        {% endmacro %}
                     </nav>
 
                     <a href="#" @click.prevent="menuExpanded = !menuExpanded" class="d-block d-md-none header__hamburger hamburger hamburger--squeeze" :class="{ 'is-active hamburger--inverted': menuExpanded }" type="button">

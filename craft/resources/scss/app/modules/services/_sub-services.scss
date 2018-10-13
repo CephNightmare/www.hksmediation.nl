@@ -1,7 +1,7 @@
 .sub-services {
     position: fixed;
     left: rem-calc(20);
-    top: rem-calc(230);
+    top: rem-calc(20);
     z-index: 1;
     width: 20%;
     background-color: map-deep-get($colors, "white", "default");

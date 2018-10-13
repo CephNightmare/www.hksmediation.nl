@@ -73,8 +73,12 @@ h6, .h6 {
     }
 }
 
-p {
+p, ul, ol {
     margin: rem-calc(10) 0;
     line-height: 1.9;
     color: map-deep-get($colors, "blue", "dark");
+}
+
+ul, ol {
+    margin-left: rem-calc(20);
 }

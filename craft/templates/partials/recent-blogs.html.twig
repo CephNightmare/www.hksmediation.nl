@@ -14,7 +14,6 @@
                 {% for blog in blogs %}
                     <div class="col-xs-24 col-sm-12 col-md-8">
                         <a href="{{ blog.url }}" class="blog-item">
-                            {#data-src-small="{{ asset.getUrl('thumb') }}"#}
                             <div class="blog-item__bg b-lazy" data-src-small="{{ blog.image.one().getUrl('blogThumbnailSmall') }}" data-src="{{ blog.image.one().getUrl('blogThumbnailMedium') }}"></div>
                             <div class="blog-item__content">
                                 <h3 class="h6 blog-item__title">{{ blog.title }}</h3>

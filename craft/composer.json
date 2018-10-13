@@ -5,7 +5,8 @@
     "craftcms/contact-form": "^2.2",
     "fatfish/navigation": "v1.0.7",
     "craftcms/ckeditor": "1.0.0-beta.2",
-    "rias/craft-contact-form-extensions": "1.0.11"
+    "rias/craft-contact-form-extensions": "1.0.11",
+    "verbb/navigation": "1.0.12"
   },
   "autoload": {
     "psr-4": {

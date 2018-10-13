@@ -21,6 +21,7 @@ Barba.Dispatcher.on("transitionCompleted", function () {
                 }
             },
             mounted: function () {
+                this.menuExpanded = false;
             },
             methods: {},
             created: function () {

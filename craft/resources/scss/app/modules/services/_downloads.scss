@@ -1,5 +1,6 @@
 .downloads {
     padding: 25px;
+    overflow: hidden;
     background-color: map-deep-get($colors, "white", "default");
     border-left: 1px solid map-deep-get($colors, "gray", "lighter");
     border-right: 1px solid map-deep-get($colors, "gray", "lighter");
@@ -11,8 +12,13 @@
 
     &__title {
         text-align: center;
-        margin-bottom: rem-calc(50);
+        margin-bottom: rem-calc(25);
         color: map-deep-get($colors, "blue", "default");
+        padding: 0 10px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem-calc(50);
+        }
     }
 
     &__item {
@@ -23,8 +29,14 @@
         border: 1px solid map-deep-get($colors, "blue", "dark");
         border-radius: $border-radius;
         color: map-deep-get($colors, "blue", "dark");
-        margin: rem-calc(20) 0;
+        margin: rem-calc(20) rem-calc(10);
         transition: $transition-default;
+        width: 100%;
+        float: left;
+
+        @include media-breakpoint-up(md) {
+            width: calc(50% - 20px);
+        }
 
         svg {
             fill: map-deep-get($colors, "blue", "dark");

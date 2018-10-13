@@ -1,3 +1,36 @@
+@keyframes hoverItemBar {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        left: 80%;
+        width: 100%;
+    }
+}
+
+
+@keyframes hoverItemBarReverse {
+    0% {
+        left: 80%;
+        width: 100%;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
 .header {
     position: fixed;
     z-index: 10;
@@ -67,6 +100,15 @@
         justify-content: space-between;
     }
 
+    &__logo {
+        width: rem-calc(150);
+        display: inline-block;
+
+        @include media-breakpoint-up(md) {
+            width: rem-calc(300);
+        }
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -77,9 +119,10 @@
         right: 0;
         top: 0;
         bottom: 0;
+        list-style-type: none;
+        margin: 0 0 0 rem-calc(9999);
         background-color: map-deep-get($colors, "blue", "default");
         opacity: 0;
-        margin-left: rem-calc(9999);
         transition: opacity .3s ease-in-out, margin-left 0s linear .3s;
 
         @include media-breakpoint-up(md) {
@@ -87,15 +130,25 @@
             position: static;
             background-color: transparent;
             align-content: inherit;
-            margin-left: 0;
+            margin: 0;
             opacity: 1;
         }
     }
 
     &__list-item {
         text-align: center;
-        margin: rem-calc(20) rem-calc(10);
         width: 100%;
+        position: relative;
+
+        &:hover,
+        &:focus {
+            #{$header}__sub-list {
+                opacity: 1;
+                margin-left: 0;
+                transform: translateY(0);
+                transition: transform .3s ease-in-out, opacity .3s ease-in-out, margin-left 0s linear;
+            }
+        }
 
         @include media-breakpoint-up(md) {
             width: auto;
@@ -104,22 +157,96 @@
 
     &__list-link {
         color: map-deep-get($colors, "white", "default");
-        font-size: 8vw;
+        font-size: 7vw;
         font-weight: 700;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin: rem-calc(20) rem-calc(10);
+        line-height: 1.1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            padding-bottom: 2px;
+            bottom: rem-calc(0);
+            left: 0;
+            width: 0;
+            height: rem-calc(2);
+            background-color: map-deep-get($colors, "blue", "default");
+            animation: hoverItemBarReverse .8s cubic-bezier(.2, 0, 0, 1) forwards;
+        }
 
         @include media-breakpoint-up(md) {
             color: map-deep-get($colors, "blue", "dark");
             font-size: rem-calc(14);
             font-weight: 300;
         }
+
+        &:hover,
+        &:focus {
+            &::after {
+                animation: hoverItemBar .8s cubic-bezier(.2, 0, 0, 1) forwards;
+            }
+        }
     }
 
-    &__logo {
-        width: rem-calc(150);
+    &__sub-list {
+        list-style-type: none;
+        margin: 0;
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: transform .3s ease-in-out, opacity .3s ease-in-out, margin-left 0s linear .3s;
+            width: rem-calc(150);
+            padding: 15px 0 0;
+            margin: 0 0 0 rem-calc(9999);
+            box-shadow: $box-shadow;
+            background-color: map-deep-get($colors, "white", "default");
+        }
+    }
+
+    &__sub-list-link {
+        color: map-deep-get($colors, "white", "default");
+        font-size: 7vw;
+        font-weight: 700;
+        position: relative;
+        overflow: hidden;
         display: inline-block;
 
         @include media-breakpoint-up(md) {
-            width: rem-calc(300);
+            color: map-deep-get($colors, "blue", "dark");
+            display: block;
+            font-size: rem-calc(14);
+            font-weight: 300;
+            background-color: map-deep-get($colors, "white", "default");
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            padding: 5px 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            padding-bottom: 2px;
+            bottom: rem-calc(0);
+            left: 0;
+            width: 0;
+            height: rem-calc(2);
+            background-color: map-deep-get($colors, "blue", "default");
+            animation: hoverItemBarReverse .8s cubic-bezier(.2, 0, 0, 1) forwards;
+        }
+
+        &:hover,
+        &:focus {
+            &::after {
+                animation: hoverItemBar .8s cubic-bezier(.2, 0, 0, 1) forwards;
+            }
         }
     }
 
