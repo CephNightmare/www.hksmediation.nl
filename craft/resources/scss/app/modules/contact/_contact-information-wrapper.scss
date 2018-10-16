@@ -1,0 +1,9 @@
+.contact-information-wrapper {
+    margin: rem-calc(-40) 0 rem-calc(40);
+    position: relative;
+    z-index: 3;
+
+    @include media-breakpoint-up(md) {
+        margin: rem-calc(-80) 0 rem-calc(80);
+    }
+}

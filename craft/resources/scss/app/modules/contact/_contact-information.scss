@@ -1,0 +1,22 @@
+.contact-information {
+    background-color: map-deep-get($colors, "blue", "dark");
+    color: map-deep-get($colors, "white", "default");
+    padding: 50px;
+    height: 100%;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-top: rem-calc(40);
+    }
+
+    &__icon {
+        margin-right: rem-calc(25);
+    }
+
+    &__row-text {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+    }
+}

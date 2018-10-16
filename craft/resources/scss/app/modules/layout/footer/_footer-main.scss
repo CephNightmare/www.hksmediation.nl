@@ -17,4 +17,19 @@
         max-width: rem-calc(260);
         display: inline-block;
     }
+
+    &__menu {
+        list-style-type: none;
+        padding: 0;
+        margin: rem-calc(10) 0 0 0;
+    }
+
+    &__menu-link {
+        color: map-deep-get($colors, "blue", "dark");
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }

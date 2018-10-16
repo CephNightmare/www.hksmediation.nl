@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b0e63be29250a9473929401f07833b2",
+    "content-hash": "770e093602d76652fda22bef605d4247",
     "packages": [
         {
             "name": "albertcht/invisible-recaptcha",
@@ -398,11 +398,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.26.1",
+            "version": "3.0.27.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/61fb42721fc40e65b0f6b459c8c0b47dd5d91146",
-                "reference": "61fb42721fc40e65b0f6b459c8c0b47dd5d91146",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4402eb4bfd4515246a07706d23f4f5c1f5efcbc8",
+                "reference": "4402eb4bfd4515246a07706d23f4f5c1f5efcbc8",
                 "shasum": ""
             },
             "require": {
@@ -473,7 +473,7 @@
                 "docs": "https://github.com/craftcms/docs",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2018-09-29T22:15:04+00:00"
+            "time": "2018-10-12T14:53:38+00:00"
         },
         {
             "name": "craftcms/contact-form",

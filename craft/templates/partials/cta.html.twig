@@ -7,7 +7,7 @@
                     <p class="cta__text">{{ entry.ctaText }}</p>
                 </div>
                 <div class="cta__right-content">
-                    <a href="{{ entry.ctaButtonLink }}" class="button button--white">{{ entry.ctaButtonTitle }}</a>
+                    <a href="{{ entry.ctaButtonLink.one().url }}" class="button button--white">{{ entry.ctaButtonTitle }}</a>
                 </div>
             </div>
         </div>

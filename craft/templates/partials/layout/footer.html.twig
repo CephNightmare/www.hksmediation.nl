@@ -1,6 +1,6 @@
 <footer id="footer" class="footer">
-
-    <div class="footer-contact">
+    {% if hideContactFooter is not defined %}
+        <div class="footer-contact">
         <div class="footer-contact__bg"></div>
 
         <div class="container">
@@ -91,6 +91,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
     <div class="footer-main">
         <div class="container">
@@ -102,6 +103,15 @@
 
                 <div class="col-xs-24 col-sm-10 col-md-6">
                     <h6 class="h6 h6--bold footer-main__title">{{ footerMain.menuTitle }}</h6>
+
+                    {{
+                        craft.navigation.render('footerMenu', {
+                            ulClass: 'footer-main__menu',
+                            liClass: 'footer-main__menu-item',
+                            aClass: 'footer-main__menu-link',
+                            activeClass: 'footer-main__menu-link--active'
+                        })
+                    }}
                 </div>
 
                 <div class="col-xs-24 col-md-6">
